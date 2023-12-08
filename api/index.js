@@ -4,7 +4,7 @@ import dotenv from "dotenv";
 import userRouter from "./routes/user.route.js"
 import authRouter from "./routes/auth.route.js"
 
-dotenv.config();//create dotenv then config to use
+dotenv.config();//create dotenv then config to use to hide mongoose key
 
 mongoose.connect(process.env.MONGO).then(()=> {
     console.log("connected to MongoDB");
